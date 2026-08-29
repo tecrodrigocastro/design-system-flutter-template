@@ -31,3 +31,6 @@ export 'core/enums/ds_input_variant_enum.dart';
 // Atoms
 export 'src/components/atoms/buttons/ds_button.dart';
 export 'src/components/atoms/inputs/ds_input.dart';
+
+// Molecules
+export 'src/components/molecules/cards/ds_card.dart';
