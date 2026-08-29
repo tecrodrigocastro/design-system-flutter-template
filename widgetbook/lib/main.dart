@@ -1,3 +1,4 @@
+import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
@@ -25,8 +26,8 @@ class WidgetbookGalleryApp extends StatelessWidget {
       addons: [
         MaterialThemeAddon(
           themes: [
-            WidgetbookTheme(name: 'Light', data: ThemeData.light(useMaterial3: true)),
-            WidgetbookTheme(name: 'Dark', data: ThemeData.dark(useMaterial3: true)),
+            WidgetbookTheme(name: 'Light', data: DsTheme.light),
+            WidgetbookTheme(name: 'Dark', data: DsTheme.dark),
           ],
         ),
         ViewportAddon(Viewports.all),
