@@ -23,6 +23,7 @@ export 'src/tokens/spacing.dart';
 export 'src/tokens/typography.dart';
 
 // Enums
+export 'core/enums/ds_banner_size_enum.dart';
 export 'core/enums/ds_banner_variant_enum.dart';
 export 'core/enums/ds_button_size_enum.dart';
 export 'core/enums/ds_button_variant_enum.dart';
