@@ -1,0 +1,11 @@
+include: package:flutter_lints/flutter.yaml
+
+# Every public token, enum, and component must carry a dartdoc comment —
+# this is what feeds both `dart doc` and the Widgetbook use case pages.
+linter:
+  rules:
+    public_member_api_docs: true
+    sort_pub_dependencies: true
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options

@@ -1,0 +1,12 @@
+dartdoc:
+  # Fail the build on broken doc references instead of publishing pages
+  # with silently dead links.
+  errors:
+    - unresolved-doc-reference
+    - broken-link
+  warnings:
+    - ambiguous-doc-reference
+  categoryOrder:
+    - "Tokens"
+    - "Enums"
+    - "Components"
