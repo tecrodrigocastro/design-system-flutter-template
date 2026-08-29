@@ -90,10 +90,22 @@ final directories = <_widgetbook.WidgetbookNode>[
                             .dsBannerAllVariantsUseCase,
                   ),
                   _widgetbook.WidgetbookUseCase(
+                    name: 'Different sizes',
+                    builder:
+                        _widgetbook_gallery_use_cases_molecules_banners_ds_banner_use_case
+                            .dsBannerDifferentSizesUseCase,
+                  ),
+                  _widgetbook.WidgetbookUseCase(
                     name: 'Interactive',
                     builder:
                         _widgetbook_gallery_use_cases_molecules_banners_ds_banner_use_case
                             .dsBannerInteractiveUseCase,
+                  ),
+                  _widgetbook.WidgetbookUseCase(
+                    name: 'With images',
+                    builder:
+                        _widgetbook_gallery_use_cases_molecules_banners_ds_banner_use_case
+                            .dsBannerWithImagesUseCase,
                   ),
                 ],
               )
