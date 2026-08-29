@@ -96,7 +96,8 @@ class DsInput extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (label != null) ...[
-          Text(label!, style: DsTypography.bodySmall.copyWith(color: DsNeutral.gray600)),
+          Text(label!,
+              style: DsTypography.bodySmall.copyWith(color: DsNeutral.gray600)),
           const SizedBox(height: DsSpacing.xs),
         ],
         TextField(
@@ -108,11 +109,16 @@ class DsInput extends StatelessWidget {
           style: DsTypography.bodyMedium.copyWith(color: DsNeutral.gray800),
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: DsTypography.bodyMedium.copyWith(color: DsNeutral.gray400),
+            hintStyle:
+                DsTypography.bodyMedium.copyWith(color: DsNeutral.gray400),
             filled: variant == DsInputVariant.filled,
             fillColor: DsNeutral.gray50,
-            prefixIcon: prefixIcon != null ? Icon(prefixIcon, color: DsNeutral.gray500) : null,
-            suffixIcon: suffixIcon != null ? Icon(suffixIcon, color: DsNeutral.gray500) : null,
+            prefixIcon: prefixIcon != null
+                ? Icon(prefixIcon, color: DsNeutral.gray500)
+                : null,
+            suffixIcon: suffixIcon != null
+                ? Icon(suffixIcon, color: DsNeutral.gray500)
+                : null,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: DsSpacing.md,
               vertical: DsSpacing.sm,
@@ -127,7 +133,8 @@ class DsInput extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(DsRadius.sm),
-              borderSide: BorderSide(color: _hasError ? DsDanger.base : DsPrimary.base, width: 2),
+              borderSide: BorderSide(
+                  color: _hasError ? DsDanger.base : DsPrimary.base, width: 2),
             ),
             disabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(DsRadius.sm),
@@ -137,7 +144,8 @@ class DsInput extends StatelessWidget {
         ),
         if (_hasError) ...[
           const SizedBox(height: DsSpacing.xs),
-          Text(errorText!, style: DsTypography.caption.copyWith(color: DsDanger.base)),
+          Text(errorText!,
+              style: DsTypography.caption.copyWith(color: DsDanger.base)),
         ],
       ],
     );

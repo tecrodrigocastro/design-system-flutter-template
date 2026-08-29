@@ -9,7 +9,8 @@ Widget dsInputInteractiveUseCase(BuildContext context) {
     padding: const EdgeInsets.all(DsSpacing.md),
     child: DsInput(
       label: context.knobs.stringOrNull(label: 'Label', initialValue: 'E-mail'),
-      hint: context.knobs.stringOrNull(label: 'Hint', initialValue: 'voce@exemplo.com'),
+      hint: context.knobs
+          .stringOrNull(label: 'Hint', initialValue: 'voce@exemplo.com'),
       errorText: context.knobs.stringOrNull(label: 'Error text'),
       variant: context.knobs.object.dropdown<DsInputVariant>(
         label: 'Variant',

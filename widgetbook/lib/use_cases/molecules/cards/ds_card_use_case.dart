@@ -5,7 +5,8 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
 @widgetbook.UseCase(name: 'Interactive', type: DsCard)
 Widget dsCardInteractiveUseCase(BuildContext context) {
-  final isTappable = context.knobs.boolean(label: 'Tappable', initialValue: true);
+  final isTappable =
+      context.knobs.boolean(label: 'Tappable', initialValue: true);
 
   return Padding(
     padding: const EdgeInsets.all(DsSpacing.md),
@@ -22,7 +23,8 @@ Widget dsCardInteractiveUseCase(BuildContext context) {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            context.knobs.string(label: 'Title', initialValue: 'Produto Premium'),
+            context.knobs
+                .string(label: 'Title', initialValue: 'Produto Premium'),
             style: DsTypography.h3,
           ),
           const SizedBox(height: DsSpacing.xs),

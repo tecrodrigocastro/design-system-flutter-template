@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  Widget wrap(Widget child) => MaterialApp(home: Scaffold(body: Center(child: child)));
+  Widget wrap(Widget child) =>
+      MaterialApp(home: Scaffold(body: Center(child: child)));
 
   testWidgets('renders its text', (tester) async {
     await tester.pumpWidget(wrap(DsButton(text: 'Enviar', onPressed: () {})));
@@ -13,7 +14,8 @@ void main() {
 
   testWidgets('calls onPressed when tapped', (tester) async {
     var tapCount = 0;
-    await tester.pumpWidget(wrap(DsButton(text: 'Enviar', onPressed: () => tapCount++)));
+    await tester.pumpWidget(
+        wrap(DsButton(text: 'Enviar', onPressed: () => tapCount++)));
 
     await tester.tap(find.byType(DsButton));
     await tester.pump();
@@ -22,7 +24,8 @@ void main() {
   });
 
   testWidgets('does not call onPressed when null (disabled)', (tester) async {
-    await tester.pumpWidget(wrap(const DsButton(text: 'Enviar', onPressed: null)));
+    await tester
+        .pumpWidget(wrap(const DsButton(text: 'Enviar', onPressed: null)));
 
     await tester.tap(find.byType(DsButton));
     await tester.pump();
@@ -31,7 +34,8 @@ void main() {
     expect(find.text('Enviar'), findsOneWidget);
   });
 
-  testWidgets('shows a spinner and hides its text while loading', (tester) async {
+  testWidgets('shows a spinner and hides its text while loading',
+      (tester) async {
     await tester.pumpWidget(
       wrap(DsButton(text: 'Salvando...', isLoading: true, onPressed: () {})),
     );
@@ -42,7 +46,8 @@ void main() {
   testWidgets('does not call onPressed while loading', (tester) async {
     var tapCount = 0;
     await tester.pumpWidget(
-      wrap(DsButton(text: 'Salvando...', isLoading: true, onPressed: () => tapCount++)),
+      wrap(DsButton(
+          text: 'Salvando...', isLoading: true, onPressed: () => tapCount++)),
     );
 
     await tester.tap(find.byType(DsButton));

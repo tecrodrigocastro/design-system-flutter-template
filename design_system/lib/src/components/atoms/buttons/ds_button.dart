@@ -95,9 +95,7 @@ class DsButton extends StatelessWidget {
             ? Colors.transparent
             : DsNeutral.gray100,
         foreground: DsNeutral.gray400,
-        border: variant == DsButtonVariant.outline
-            ? DsNeutral.gray200
-            : null,
+        border: variant == DsButtonVariant.outline ? DsNeutral.gray200 : null,
       );
     }
 
@@ -129,7 +127,8 @@ class DsButton extends StatelessWidget {
     }
   }
 
-  ({double height, double horizontalPadding, double iconSize}) _resolveSizing() {
+  ({double height, double horizontalPadding, double iconSize})
+      _resolveSizing() {
     switch (size) {
       case DsButtonSize.small:
         return (height: 32, horizontalPadding: DsSpacing.sm, iconSize: 16);
@@ -178,7 +177,8 @@ class DsButton extends StatelessWidget {
                   )
                 else if (icon != null)
                   Icon(icon, size: sizing.iconSize, color: colors.foreground),
-                if (isLoading || icon != null) const SizedBox(width: DsSpacing.sm),
+                if (isLoading || icon != null)
+                  const SizedBox(width: DsSpacing.sm),
                 Text(
                   text,
                   style: DsTypography.button.copyWith(color: colors.foreground),
