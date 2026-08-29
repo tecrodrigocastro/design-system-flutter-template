@@ -8,9 +8,11 @@
 /// import 'package:design_system/design_system.dart';
 /// ```
 ///
-/// The library is organized in three layers:
+/// The library is organized in four layers:
 /// - **Tokens** ([DsPrimary], [DsTypography], [DsSpacing], [DsRadius]...):
 ///   the raw design decisions. Change these to re-skin the whole system.
+/// - **Theme** ([DsTheme]): a `MaterialApp`-ready `ThemeData` built
+///   entirely from the tokens above.
 /// - **Enums** (`DsButtonVariant`, `DsButtonSize`...): type-safe variants
 ///   consumed by components, so there are no magic strings.
 /// - **Components** ([DsButton], [DsInput], [DsCard], [DsBanner]):
@@ -21,6 +23,9 @@ library;
 export 'src/tokens/colors.dart';
 export 'src/tokens/spacing.dart';
 export 'src/tokens/typography.dart';
+
+// Theme
+export 'src/theme/ds_theme.dart';
 
 // Enums
 export 'core/enums/ds_banner_size_enum.dart';
