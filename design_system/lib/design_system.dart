@@ -33,4 +33,5 @@ export 'src/components/atoms/buttons/ds_button.dart';
 export 'src/components/atoms/inputs/ds_input.dart';
 
 // Molecules
+export 'src/components/molecules/banners/ds_banner.dart';
 export 'src/components/molecules/cards/ds_card.dart';
