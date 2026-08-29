@@ -1,5 +1,7 @@
 # design-system-template
 
+[![CI](https://github.com/tecrodrigocastro/design-system-flutter-template/actions/workflows/ci.yml/badge.svg)](https://github.com/tecrodrigocastro/design-system-flutter-template/actions/workflows/ci.yml)
+
 A starter template for building a Flutter design system the "right way":
 design tokens, type-safe components built with Atomic Design, DartDoc on
 every public API, and a live component gallery powered by
