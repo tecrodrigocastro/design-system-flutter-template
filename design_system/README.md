@@ -59,3 +59,7 @@ open doc/api/index.html
 - **Never take a `String` for a variant** — add a value to the relevant enum in `lib/core/enums` instead, so the compiler catches typos.
 - **Every public class/member gets a `///` doc comment** with a `dart` example — enforced by `public_member_api_docs` in `analysis_options.yaml`.
 - **Prefer `const` constructors and `StatelessWidget`** — components hold no internal state unless the interaction genuinely requires it.
+
+## License
+
+[MIT](LICENSE).

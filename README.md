@@ -1,6 +1,7 @@
 # design-system-template
 
 [![CI](https://github.com/tecrodrigocastro/design-system-flutter-template/actions/workflows/ci.yml/badge.svg)](https://github.com/tecrodrigocastro/design-system-flutter-template/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A starter template for building a Flutter design system the "right way":
 design tokens, type-safe components built with Atomic Design, DartDoc on
@@ -58,3 +59,8 @@ tokens, and enums as MCP tools, so an agent can look up an exact prop
 schema instead of guessing. It's already wired up for this repo in
 [`.mcp.json`](.mcp.json). See [`mcp_server/README.md`](mcp_server/README.md)
 for the tool list and how to point it at a different design_system copy.
+
+## License
+
+[MIT](LICENSE) — use this as a starting point for your own design system,
+rename `design_system`/`Ds*` to your brand, and swap the tokens.
