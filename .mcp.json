@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "design_system": {
+      "command": "dart",
+      "args": ["run", "bin/mcp_server.dart"],
+      "cwd": "mcp_server"
+    }
+  }
+}
