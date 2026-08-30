@@ -8,12 +8,32 @@ A Flutter design system template built around three pillars:
 
 ## Install
 
-This package isn't published to pub.dev — it's a template meant to be copied or used as a path/git dependency:
+This package isn't published to pub.dev — it's a template meant to be copied. Once you've made it your own, there are a few ways to distribute it to consuming apps:
+
+**Path dependency** — single repo/monorepo, one team (what this template uses by default):
 
 ```yaml
 dependencies:
   design_system:
     path: ../design_system
+```
+
+**Git dependency** — multiple app repos, one shared design system repo, no publishing step:
+
+```yaml
+dependencies:
+  design_system:
+    git:
+      url: https://github.com/your-org/your-design-system.git
+```
+
+**Self-hosted pub server** — many teams, real semver releases via plain `dart pub publish` / `flutter pub get`. If you don't want to depend on a third-party paid service, [Dartisan](https://github.com/tecrodrigocastro/dartisan) is an open-source (MIT), self-hosted server implementing the standard `pub` protocol — still under active development, not production-ready yet, but worth watching:
+
+```yaml
+dependencies:
+  design_system:
+    hosted: https://your-dartisan-instance.example.com
+    version: ^0.3.0
 ```
 
 ## Usage
