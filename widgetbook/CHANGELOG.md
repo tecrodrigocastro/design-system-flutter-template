@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Add use cases for the new organisms: `DsAppBar`, `DsEmptyState`, `DsFormSection`.
+
 ## 0.2.0
 
 - Wire `DsTheme.light` / `DsTheme.dark` into the Material theme addon.
