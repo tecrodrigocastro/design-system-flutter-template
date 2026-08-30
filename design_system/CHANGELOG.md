@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Add organisms: `DsAppBar`, `DsEmptyState`, `DsFormSection` — the third Atomic Design layer, composing atoms and molecules.
+
 ## 0.2.0
 
 - Add `DsTheme.light` / `DsTheme.dark`, a `ThemeData` pair assembled from the design tokens.
