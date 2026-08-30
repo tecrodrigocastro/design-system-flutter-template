@@ -20,6 +20,12 @@ import 'package:widgetbook_gallery/use_cases/molecules/banners/ds_banner_use_cas
     as _widgetbook_gallery_use_cases_molecules_banners_ds_banner_use_case;
 import 'package:widgetbook_gallery/use_cases/molecules/cards/ds_card_use_case.dart'
     as _widgetbook_gallery_use_cases_molecules_cards_ds_card_use_case;
+import 'package:widgetbook_gallery/use_cases/organisms/app_bars/ds_app_bar_use_case.dart'
+    as _widgetbook_gallery_use_cases_organisms_app_bars_ds_app_bar_use_case;
+import 'package:widgetbook_gallery/use_cases/organisms/empty_states/ds_empty_state_use_case.dart'
+    as _widgetbook_gallery_use_cases_organisms_empty_states_ds_empty_state_use_case;
+import 'package:widgetbook_gallery/use_cases/organisms/forms/ds_form_section_use_case.dart'
+    as _widgetbook_gallery_use_cases_organisms_forms_ds_form_section_use_case;
 
 final directories = <_widgetbook.WidgetbookNode>[
   _widgetbook.WidgetbookFolder(
@@ -122,6 +128,59 @@ final directories = <_widgetbook.WidgetbookNode>[
                     builder:
                         _widgetbook_gallery_use_cases_molecules_cards_ds_card_use_case
                             .dsCardInteractiveUseCase,
+                  )
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookFolder(
+        name: 'organisms',
+        children: [
+          _widgetbook.WidgetbookFolder(
+            name: 'app_bars',
+            children: [
+              _widgetbook.WidgetbookComponent(
+                name: 'DsAppBar',
+                useCases: [
+                  _widgetbook.WidgetbookUseCase(
+                    name: 'Interactive',
+                    builder:
+                        _widgetbook_gallery_use_cases_organisms_app_bars_ds_app_bar_use_case
+                            .dsAppBarInteractiveUseCase,
+                  )
+                ],
+              )
+            ],
+          ),
+          _widgetbook.WidgetbookFolder(
+            name: 'empty_states',
+            children: [
+              _widgetbook.WidgetbookComponent(
+                name: 'DsEmptyState',
+                useCases: [
+                  _widgetbook.WidgetbookUseCase(
+                    name: 'Interactive',
+                    builder:
+                        _widgetbook_gallery_use_cases_organisms_empty_states_ds_empty_state_use_case
+                            .dsEmptyStateInteractiveUseCase,
+                  )
+                ],
+              )
+            ],
+          ),
+          _widgetbook.WidgetbookFolder(
+            name: 'forms',
+            children: [
+              _widgetbook.WidgetbookComponent(
+                name: 'DsFormSection',
+                useCases: [
+                  _widgetbook.WidgetbookUseCase(
+                    name: 'Interactive',
+                    builder:
+                        _widgetbook_gallery_use_cases_organisms_forms_ds_form_section_use_case
+                            .dsFormSectionInteractiveUseCase,
                   )
                 ],
               )
