@@ -10,18 +10,19 @@ Design System"**.
 
 ## Structure
 
-This is a two-package monorepo:
+This is a three-package monorepo:
 
 ```
 .
 ├── design_system/   # The design system itself — a publishable Flutter package
-└── widgetbook/       # Interactive gallery app that consumes design_system via a path dependency
+├── widgetbook/       # Interactive gallery app that consumes design_system via a path dependency
+└── mcp_server/        # MCP server exposing the design_system catalog to AI coding assistants
 ```
 
 They're kept as siblings on purpose: `design_system` stays a clean,
-publishable package with no gallery/dev-tooling baggage, and `widgetbook`
-is just one of potentially many consumers of it (an app could depend on
-it the same way).
+publishable package with no gallery/dev-tooling baggage; `widgetbook` and
+`mcp_server` are each just one of potentially many consumers of it (an
+app could depend on `design_system` the same way `widgetbook` does).
 
 ## Quickstart
 
@@ -49,3 +50,11 @@ open doc/api/index.html
 
 See [`design_system/README.md`](design_system/README.md) for the
 package's architecture, principles, and folder layout.
+
+## AI coding assistant integration
+
+[`mcp_server/`](mcp_server) exposes the design_system's components,
+tokens, and enums as MCP tools, so an agent can look up an exact prop
+schema instead of guessing. It's already wired up for this repo in
+[`.mcp.json`](.mcp.json). See [`mcp_server/README.md`](mcp_server/README.md)
+for the tool list and how to point it at a different design_system copy.
