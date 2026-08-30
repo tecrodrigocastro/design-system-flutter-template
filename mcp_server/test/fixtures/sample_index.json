@@ -1,0 +1,39 @@
+[
+  {
+    "name": "design_system",
+    "qualifiedName": "design_system",
+    "href": "design_system/",
+    "kind": 9,
+    "desc": "A Flutter design system: design tokens, type-safe components."
+  },
+  {
+    "name": "DsBanner",
+    "qualifiedName": "design_system.DsBanner",
+    "href": "design_system/DsBanner-class.html",
+    "kind": 3,
+    "desc": "A banner for the design system, used for both inline feedback messages and promotional placements."
+  },
+  {
+    "name": "DsBanner.new",
+    "qualifiedName": "design_system.DsBanner.DsBanner.new",
+    "href": "design_system/DsBanner/DsBanner.html",
+    "kind": 2,
+    "desc": "Creates a design system banner.",
+    "enclosedBy": {"name": "DsBanner", "kind": 3, "href": "design_system/DsBanner-class.html"}
+  },
+  {
+    "name": "isLoading",
+    "qualifiedName": "design_system.DsButton.isLoading",
+    "href": "design_system/DsButton/isLoading.html",
+    "kind": 16,
+    "desc": "Whether to replace text with a spinner and ignore taps.",
+    "enclosedBy": {"name": "DsButton", "kind": 3, "href": "design_system/DsButton-class.html"}
+  },
+  {
+    "name": "DsButtonVariant",
+    "qualifiedName": "ds_button_variant_enum.DsButtonVariant",
+    "href": "core_enums_ds_button_variant_enum/DsButtonVariant.html",
+    "kind": 5,
+    "desc": "Visual style of a DsButton."
+  }
+]
