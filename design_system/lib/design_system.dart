@@ -15,8 +15,9 @@
 ///   entirely from the tokens above.
 /// - **Enums** (`DsButtonVariant`, `DsButtonSize`...): type-safe variants
 ///   consumed by components, so there are no magic strings.
-/// - **Components** ([DsButton], [DsInput], [DsCard], [DsBanner]):
-///   ready-to-use widgets, grouped as atoms and molecules.
+/// - **Components** ([DsButton], [DsInput], [DsCard], [DsBanner],
+///   [DsAppBar], [DsEmptyState], [DsFormSection]): ready-to-use widgets,
+///   grouped as atoms, molecules and organisms.
 library;
 
 // Tokens
@@ -45,3 +46,4 @@ export 'src/components/molecules/cards/ds_card.dart';
 // Organisms
 export 'src/components/organisms/app_bars/ds_app_bar.dart';
 export 'src/components/organisms/empty_states/ds_empty_state.dart';
+export 'src/components/organisms/forms/ds_form_section.dart';
