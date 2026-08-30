@@ -44,3 +44,4 @@ export 'src/components/molecules/cards/ds_card.dart';
 
 // Organisms
 export 'src/components/organisms/app_bars/ds_app_bar.dart';
+export 'src/components/organisms/empty_states/ds_empty_state.dart';
