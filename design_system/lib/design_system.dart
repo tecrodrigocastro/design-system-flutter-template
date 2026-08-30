@@ -41,3 +41,6 @@ export 'src/components/atoms/inputs/ds_input.dart';
 // Molecules
 export 'src/components/molecules/banners/ds_banner.dart';
 export 'src/components/molecules/cards/ds_card.dart';
+
+// Organisms
+export 'src/components/organisms/app_bars/ds_app_bar.dart';
